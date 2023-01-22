@@ -14,11 +14,6 @@ TILE_SIZE = 32
 ENEMY_EVENT_TYPE = 30
 back_photo = pygame.image.load("assets/Back.png")
 clock = pygame.time.Clock()
-WINDOW_SIZE = WINDOW_WIDTH, WINDOW_HEIGHT = 672, 608
-MAPS_DIR = 'maps'
-TILE_SIZE = 32
-ENEMY_EVENT_TYPE = 30
-
 
 def Fon_size(size):
     return pygame.font.Font("assets/font.ttf", size)
@@ -27,7 +22,7 @@ def Fon_size(size):
 def Button_play():
     while True:
 
-        class Labyrint:
+        class Labyrint_1:
             def __init__(self, filename, go_tiles, win_tiles):
                 self.map = pytmx.load_pygame(f'{MAPS_DIR}/{filename}')
                 self.height = self.map.height
@@ -153,7 +148,7 @@ def Button_play():
             pygame.init()
             screen = pygame.display.set_mode(WINDOW_SIZE)
 
-            labyrinth = Labyrint('1.tmx', [306, 114], 114)
+            labyrinth = Labyrint_1('1.tmx', [306, 114], 114)
             hero = Hero('princieska.png', (3, 10))
             enemy = Enemy('pirat.png', (14, 5))
             game = Game(labyrinth, hero, enemy)
@@ -178,6 +173,8 @@ def Button_play():
                 if game.check_lose():
                     game_over = True
                     show_message(screen, 'Ты проиграл(')
+                    exit_b = Button(image=pygame.image.load("assets/exit.png"), pos=(340, 500),
+                                    words=" ", fon=Fon_size(50), color1="White", color2="White")
                 pygame.display.flip()
                 clock.tick(FPS)
             pygame.quit()
@@ -236,7 +233,6 @@ def Button_option():
                     menu()
 
         pygame.display.update()
-
 
 def menu():
     while True:
