@@ -18,6 +18,9 @@ STEP = 10
 P_COLOR = (255, 0, 0)
 GRAVITY = 1
 DELAY = 5
+level = 'level1'
+
+
 
 pygame.init()
 screen = pygame.display.set_mode((WINDOW_SIZE))
@@ -281,11 +284,23 @@ class Blocks(Map):
             self.img.blit(flag, (0, 0))
         self.mask = pygame.mask.from_surface(self.img)
 
-def main(screen):
+
+def show_message(screen, message):
+    font = pygame.font.Font(None, 50)
+    text = font.render(message, 2, (50, 70, 0))
+    text_x = WINDOW_WIDTH // 2 - text.get_width() // 2
+    text_y = WINDOW_HEIGHT // 2 - text.get_height() // 2
+    text_w = text.get_width()
+    text_h = text.get_height()
+    pygame.draw.rect(screen, (200, 150, 50), (text_x - 10, text_y - 10,
+                                              text_w + 20, text_h + 20))
+    screen.blit(text, (text_x, text_y))
+
+
+def platformer(screen):
     clock = pygame.time.Clock()
     background, bg_image = get_background(BG_FON)
 
-    b_size = 32
 
     player = Player(32, 500, 32, 32)
     screen_rect = screen.get_rect()
@@ -333,7 +348,7 @@ def main(screen):
 
     # block = [Blocks(0, WINDOW_HEIGHT - b_size, b_size)]
 
-
+    win = False
     running = True
     while running:
         clock.tick(FPS)
@@ -343,19 +358,31 @@ def main(screen):
                 running = False
 
             if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_SPACE and player.jumping < 2:
+                if event.key == pygame.K_SPACE and player.jumping < 2 and win == False:
                     player.jump()
 
-            if player.rect.x == 32 and player.rect.y == 32*18:
-                print('you won')
-        # player.clamp_ip(screen_rect)
-        player.cycle(FPS)
-        check_move(player, platforms)
-        draw(screen, background, bg_image, player, platforms)
+            if 592 <= player.rect.x <= 630 and player.rect.y == 32 and win == False:
+                win = True
+                show_message(screen, 'You won')
+                level = 'level2'
 
+
+        if win == True:
+            pygame.display.flip()
+        else:
+            player.cycle(FPS)
+            check_move(player, platforms)
+            draw(screen, background, bg_image, player, platforms)
 
     pygame.quit()
 
-
 if __name__ == '__main__':
     main(screen)
+
+
+def main(level): #note i added the level parameter that you have to pass in
+    if level == "level1":
+        platformer(screen)
+    else:
+        p = Platformer('Adventure Time!', 'map2.tmx', 600, 600, 30)
+    p.main_loop()

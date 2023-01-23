@@ -1,5 +1,5 @@
 import pygame
-import button
+import buttonx
 
 pygame.init()
 
@@ -21,10 +21,10 @@ quit_img = pygame.image.load("images/1x/exit.png").convert_alpha()
 resume2_img = pygame.image.load('images/1x/resume.png').convert_alpha()
 
 
-resume_btn = button.Button(240, 130, resume_img, 1)
-rules_btn = button.Button(240, 260, options_img, 1)
-quit_btn = button.Button(240, 385, quit_img, 1)
-resume2_btn = button.Button(390, 500, resume2_img, 1)
+resume_btn = buttonx.Buttonx(240, 130, resume_img, 1)
+rules_btn = buttonx.Buttonx(240, 260, options_img, 1)
+quit_btn = buttonx.Buttonx(240, 385, quit_img, 1)
+resume2_btn = buttonx.Buttonx(390, 500, resume2_img, 1)
 
 def draw_text(text, font, text_col, x, y):
   img = font.render(text, True, text_col)
