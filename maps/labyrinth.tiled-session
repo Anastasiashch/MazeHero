@@ -1,0 +1,130 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "base_out_atlas.tsx",
+    "expandedProjectPaths": [
+        "tiles",
+        ".",
+        "myitems"
+    ],
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "base_out_atlas.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "bg.tmx": {
+            "scale": 1.1196428571428572,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 335.8213716108453,
+                "y": 303.2216905901116
+            }
+        },
+        "build_atlas.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "exit.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "hud_spritesheet.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "icon_58.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "map1.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 339.5,
+                "y": 255
+            }
+        },
+        "map11.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 359,
+                "y": 253
+            }
+        },
+        "map1lvl.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 450.5,
+                "y": 288
+            }
+        },
+        "myitems/left_wx.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "myitems/right_wx.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "obj_misk_atlas.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "terrain_atlas.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "terrain_atlas2.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "terrain_atlas3.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tiles/flagRed.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "C:/яндекс лицей/pygame (video)/maps",
+    "map.height": 19,
+    "map.lastUsedFormat": "tmx",
+    "map.layerDataFormat": null,
+    "map.width": 21,
+    "openFiles": [
+        "bg.tmx",
+        "map1lvl.tmx",
+        "base_out_atlas.tsx",
+        "myitems/left_wx.tsx",
+        "myitems/right_wx.tsx",
+        "terrain_atlas2.tsx",
+        "terrain_atlas3.tsx",
+        "exit.tsx"
+    ],
+    "project": "labyrinth.tiled-project",
+    "recentFiles": [
+        "bg.tmx",
+        "map1lvl.tmx",
+        "exit.tsx",
+        "terrain_atlas3.tsx",
+        "terrain_atlas2.tsx",
+        "myitems/right_wx.tsx",
+        "myitems/left_wx.tsx",
+        "base_out_atlas.tsx",
+        "map1.tmx",
+        "terrain_atlas.tsx",
+        "icon_58.tsx",
+        "obj_misk_atlas.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.margin": 0,
+    "tileset.spacing": 0
+}

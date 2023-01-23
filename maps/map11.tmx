@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="21" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="1">
+ <tileset firstgid="1" source="icon_58.tsx"/>
+ <tileset firstgid="2" source="terrain_atlas.tsx"/>
+ <tileset firstgid="1026" source="obj_misk_atlas.tsx"/>
+ <tileset firstgid="2050" source="base_out_atlas.tsx"/>
+ <tileset firstgid="3074" source="myitems/left_wx.tsx"/>
+ <tileset firstgid="3075" source="myitems/right_wx.tsx"/>
+ <tileset firstgid="3076" source="terrain_atlas2.tsx"/>
+ <tileset firstgid="4100" source="terrain_atlas3.tsx"/>
+ <tileset firstgid="5124" source="exit.tsx"/>
+ <layer id="1" name="Слой тайлов 1" width="21" height="19">
+  <data encoding="base64" compression="zlib">
+   eJydkrEvA1Ecx393LUHuXRO1I5FIEV27YRKakPgHWhMVg42NUTGIQStBrfUHUEFX0k1i6ECXbjaJWPn+ctfcu3fvTmP4DPfe/T7v977v1zaJ2hp6E0SHGkyL6GqQKGbp9y0QBz0K7MsYeko2URnOM1u/v4HasViQMB+zD47AgbJ+LoguwCV4jagfUPpdB4ugqHE+wPUI6iJYx1SwNo29tAj6nkAKXLvr48g+Bd7w7ztoRfS5hL1l4bgKru9Z8THz8C2Y/jw7Tu53xQ6/K7uqii/MWTA8tkz/N/saSa+3Y5BDTV7Ka41rFOcHahqGAzuLhgfftZ50fE3MYw1Z7KJmL2LW2Fk1PNgpfzMt/HNvOdRE0NF5I9m5KZ15ouRZFv650zl1ear5yLBDnrtunVH5sEOeu26c8SH/3Zlvqa4pNH0jnzspI92763oLe1Pd3g/WCGcYtjPj6hv95VT7ZobhGgGjIB3hfAGnoBTh5/qdPqIZuGbBHPgSnrOS8Ds/wQ24jXBm+om2QQ6uPFgFE26fkyArwffLJv7PFPgF/PWclA==
+  </data>
+ </layer>
+</map>
